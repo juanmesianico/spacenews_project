@@ -1,0 +1,133 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Safari/605.1.15" version="29.4.0">
+  <diagram name="Página-1" id="trT45W16GLA7G7mN7P3W">
+    <mxGraphModel dx="1018" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="82" edge="1" parent="1" source="70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#6E6E6E;strokeWidth=2;" target="80">
+          <mxCell id="root" as="geometry" />
+        </mxCell>
+        <mxCell id="62" edge="1" parent="1" source="50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#CD7F00;strokeWidth=2;" target="60">
+          <mxCell id="root" as="geometry" />
+        </mxCell>
+        <mxCell id="2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" value="Arquitectura de Datos — Spaceflight News Analytics (Microsoft Fabric)" vertex="1">
+          <mxGeometry height="40" width="1000" x="327" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="shape=mxgraph.azure2.server;fillColor=#0078D4;strokeColor=#0078D4;fontColor=#ffffff;fontSize=11;fontStyle=1;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;" value="Spaceflight News API" vertex="1">
+          <mxGeometry height="60" width="60" x="80" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;" value="/articles&#xa;/blogs&#xa;/reports" vertex="1">
+          <mxGeometry height="50" width="100" x="60" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="shape=mxgraph.azure2.data_factory;fillColor=#0078D4;strokeColor=#0078D4;fontColor=#ffffff;fontSize=11;fontStyle=1;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;" value="Data Factory Pipeline" vertex="1">
+          <mxGeometry height="60" width="60" x="280" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;" value="Trigger diario" vertex="1">
+          <mxGeometry height="30" width="100" x="260" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="30" edge="1" parent="1" source="10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#0078D4;strokeWidth=2;" target="20">
+          <mxCell id="root" as="geometry" />
+        </mxCell>
+        <mxCell id="40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#0050A0;fontColor=#ffffff;fontSize=11;fontStyle=1;" value="Spark Notebook&#xa;Extracción" vertex="1">
+          <mxGeometry height="60" width="160" x="480" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="41" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;" value="Paginación + Rate Limit&#xa;Retry + Deduplicación&#xa;Normalización" vertex="1">
+          <mxGeometry height="50" width="180" x="470" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="42" edge="1" parent="1" source="20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#0078D4;strokeWidth=2;" target="40">
+          <mxCell id="root" as="geometry" />
+        </mxCell>
+        <mxCell id="50" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CD7F00;strokeColor=#A06000;fontColor=#ffffff;fontSize=12;fontStyle=1;" value="Lakehouse — Bronze" vertex="1">
+          <mxGeometry height="40" width="200" x="720" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFB84D;strokeColor=#CD7F00;fontSize=10;" value="bronze_articles (Delta)" vertex="1">
+          <mxGeometry height="30" width="180" x="720" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="52" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFB84D;strokeColor=#CD7F00;fontSize=10;" value="bronze_blogs (Delta)" vertex="1">
+          <mxGeometry height="30" width="180" x="720" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="53" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFB84D;strokeColor=#CD7F00;fontSize=10;" value="bronze_reports (Delta)" vertex="1">
+          <mxGeometry height="30" width="180" x="720" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="54" edge="1" parent="1" source="40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#0078D4;strokeWidth=2;" target="50">
+          <mxCell id="root" as="geometry" />
+        </mxCell>
+        <mxCell id="60" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#0050A0;fontColor=#ffffff;fontSize=11;fontStyle=1;" value="Spark Notebook&#xa;Procesamiento 2.2" vertex="1">
+          <mxGeometry height="60" width="160" x="480" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="61" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;" value="Keywords + Entidades&#xa;Clasificación por Topic&#xa;Particionamiento + Cache" vertex="1">
+          <mxGeometry height="50" width="180" x="470" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="70" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6E6E6E;strokeColor=#4A4A4A;fontColor=#ffffff;fontSize=12;fontStyle=1;" value="Lakehouse — Silver" vertex="1">
+          <mxGeometry height="40" width="200" x="720" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="71" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C0C0C0;strokeColor=#6E6E6E;fontSize=10;" value="silver_articles (Delta, year/month)" vertex="1">
+          <mxGeometry height="30" width="200" x="720" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="72" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C0C0C0;strokeColor=#6E6E6E;fontSize=10;" value="silver_blogs (Delta, year/month)" vertex="1">
+          <mxGeometry height="30" width="200" x="720" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="73" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C0C0C0;strokeColor=#6E6E6E;fontSize=10;" value="silver_reports (Delta, year/month)" vertex="1">
+          <mxGeometry height="30" width="200" x="720" y="416" as="geometry" />
+        </mxCell>
+        <mxCell id="74" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C0C0C0;strokeColor=#6E6E6E;fontSize=10;" value="silver_topics (Delta)" vertex="1">
+          <mxGeometry height="30" width="200" x="720" y="454" as="geometry" />
+        </mxCell>
+        <mxCell id="75" edge="1" parent="1" source="60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#6E6E6E;strokeWidth=2;" target="70">
+          <mxCell id="root" as="geometry" />
+        </mxCell>
+        <mxCell id="80" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#0050A0;fontColor=#ffffff;fontSize=11;fontStyle=1;" value="Spark Notebook&#xa;Carga DW" vertex="1">
+          <mxGeometry height="60" width="160" x="480" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="81" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;" value="Modelo dimensional&#xa;Delta Merge (upsert)" vertex="1">
+          <mxGeometry height="40" width="180" x="470" y="608" as="geometry" />
+        </mxCell>
+        <mxCell id="90" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD700;strokeColor=#B8860B;fontColor=#000000;fontSize=12;fontStyle=1;" value="Fabric Warehouse — Gold" vertex="1">
+          <mxGeometry height="40" width="200" x="720" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="91" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3A3;strokeColor=#B8860B;fontSize=10;" value="dim_topic" vertex="1">
+          <mxGeometry height="28" width="200" x="720" y="568" as="geometry" />
+        </mxCell>
+        <mxCell id="92" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3A3;strokeColor=#B8860B;fontSize=10;" value="dim_source" vertex="1">
+          <mxGeometry height="28" width="200" x="720" y="602" as="geometry" />
+        </mxCell>
+        <mxCell id="93" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3A3;strokeColor=#B8860B;fontSize=10;" value="dim_date" vertex="1">
+          <mxGeometry height="28" width="200" x="720" y="636" as="geometry" />
+        </mxCell>
+        <mxCell id="94" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD700;strokeColor=#B8860B;fontSize=10;fontStyle=1;" value="fact_news" vertex="1">
+          <mxGeometry height="28" width="200" x="720" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="95" edge="1" parent="1" source="80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#B8860B;strokeWidth=2;" target="90">
+          <mxCell id="root" as="geometry" />
+        </mxCell>
+        <mxCell id="100" parent="1" style="shape=mxgraph.azure2.power_bi;fillColor=#F2C811;strokeColor=#B8860B;fontColor=#000000;fontSize=11;fontStyle=1;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;" value="Power BI" vertex="1">
+          <mxGeometry height="60" width="60" x="1020" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="102" edge="1" parent="1" source="90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#B8860B;strokeWidth=2;" target="100">
+          <mxCell id="root" as="geometry" />
+        </mxCell>
+        <mxCell id="110" parent="1" style="shape=mxgraph.azure2.monitor;fillColor=#0078D4;strokeColor=#0050A0;fontColor=#ffffff;fontSize=11;fontStyle=1;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;" value="Azure Monitor" vertex="1">
+          <mxGeometry height="60" width="60" x="280" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="111" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;" value="Alertas pipeline&#xa;Calidad de datos&#xa;Logs" vertex="1">
+          <mxGeometry height="50" width="100" x="260" y="608" as="geometry" />
+        </mxCell>
+        <mxCell id="112" edge="1" parent="1" source="20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#0078D4;strokeWidth=1;dashed=1;" target="110">
+          <mxCell id="root" as="geometry" />
+        </mxCell>
+        <mxCell id="113" edge="1" parent="1" source="80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#0078D4;strokeWidth=1;dashed=1;" target="110">
+          <mxCell id="root" as="geometry" />
+        </mxCell>
+        <mxCell id="120" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=2;" value="Delta Time Travel&#xa;Backup &amp; Recovery" vertex="1">
+          <mxGeometry height="50" width="160" x="980" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="121" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;" value="Rollback por versión&#xa;30 días de retención" vertex="1">
+          <mxGeometry height="40" width="160" x="980" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="122" edge="1" parent="1" source="50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#82b366;strokeWidth=1;dashed=1;" target="120">
+          <mxCell id="root" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
