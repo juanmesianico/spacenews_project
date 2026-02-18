@@ -48,19 +48,31 @@ spacenews_project/
 
 ### 1. Ingesta (Bronze)
 ```bash
-# Notebook: notebooks/01_bronze_ingestion.ipynb
+# Notebook: notebooks/2.1_extract_data.ipynb
 # Extrae datos de la API y los guarda en tablas bronze
 ```
 
-### 2. Procesamiento (Silver)
+### 2.1. Procesamiento (Silver)
 ```bash
-# Notebook: notebooks/02_silver_processing.ipynb
+# Notebook: notebooks/2.1_processing_data.ipynb
 # Enriquece datos con NLP y clasificación
+```
+
+### 2.1. Unit tests (Silver)
+```bash
+# Notebook: notebooks/2.1_unit_tests.ipynb
+# Pruebas unitarias
+```
+
+### 2.2. Análisis (Silver)
+```bash
+# Notebook: notebooks/2.2_trend_analysis.ipynb
+# Análisis de tendencias y fuentes
 ```
 
 ### 3. Data Warehouse (Gold)
 ```bash
-# Notebook: notebooks/03_gold_warehouse.ipynb
+# Notebook: notebooks/3.1_data_model.ipynb
 # Construye modelo dimensional
 ```
 
